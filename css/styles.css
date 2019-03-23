@@ -1,0 +1,656 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.punainen {
+    color: red;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #363237 !important;
+    margin-left: 100px;
+}
+
+.fa-navicon {
+    font-size: 30px !important;
+    padding: 3px;
+    color: #363237 !important;
+
+}
+
+.navbar {
+    color: #C6B298 !important;
+    background-color: #F1F1F2 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #363237;
+}
+
+
+.nav-link {
+    color: #363237;
+    font-weight: 600 !important;
+}
+
+.nav-link:hover {
+    color: #c40079 !important;
+}
+
+.dropdown-item:hover {
+    color: #c40079 !important;
+    background-color: inherit;
+}
+
+.logopicture {
+    max-width: 160px;
+    height: auto;
+}
+
+.closebtn {
+    color: #F1F1F2 !important;
+}
+
+.closebtn:hover {
+    color: #c40079 !important;
+}
+
+
+.landingarticle {
+    font-weight: 100 !important;
+    font-size: 70px !important;
+}
+
+.landingarticle2 {
+    font-weight: 900 !important;
+    font-size: 70px !important;
+}
+
+.titlearticle {
+    font-weight: 100 !important;
+    font-size: 70px !important;
+}
+
+.titlearticle2 {
+    font-weight: 900 !important;
+    font-size: 70px !important;
+}
+
+.frontpagebutton:hover {
+    border: 1px solid #c40079;
+    box-shadow: 0px 1px 10px 2px rgba(196, 0, 121, 1);
+}
+
+.frontpagebutton {
+    border: 1px solid;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+    background: -webkit-linear-gradient(120deg, #363237, #c40079);
+    background: -moz-linear-gradient(120deg, #363237, #c40079);
+    background: -ms-linear-gradient(120deg, #363237, #c40079);
+    background: -o-linear-gradient(120deg, #363237, #c40079);
+    background: linear-gradient(120deg, #363237, #c40079);
+}
+
+
+
+.kuvateksti {
+    color: #F1F1F2 !important;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.fa-angle-down {
+    color: #F1F1F2;
+    position: absolute;
+    bottom: 15%;
+    font-size: 70px !important;
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.keskitys {
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.sivulta {
+    -webkit-animation: tekstisivulta 1.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation: tekstisivulta 1.3s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    animation-delay: 0.5s;
+}
+
+
+@-webkit-keyframes tekstisivulta {
+    from {
+        opacity: 0;
+        bottom: -500px;
+    }
+    to {
+        opacity: 1;
+        bottom: 0px;
+
+    }
+}
+
+@keyframes tekstisivulta {
+    from {
+        opacity: 0;
+        bottom: -500px;
+    }
+    to {
+        opacity: 1;
+        bottom: 15%;
+
+    }
+}
+
+.kokonaytto {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.kokonaytto-sisalto {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.kokonaytto a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.kokonaytto a:hover,
+.kokonaytto a:focus {
+    color: #f1f1f1;
+}
+
+.kokonaytto .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 35px;
+    font-size: 60px;
+}
+
+#slideshow > div {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section1 {
+    margin: auto;
+    padding: 0 0 15px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.section1 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin: 0 0 10px;
+}
+
+
+.section2 {
+    height: auto;
+    background-color: #4c4e50;
+    width: 100%;
+    padding-right: 150px;
+    padding-left: 150px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.clolummtext1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3image-mobile {
+    display: none;
+}
+
+.section3 {
+    height: auto;
+    background-color: #F1F1F2;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.clolummtext2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.columbutton {
+    border: 1px solid;
+    cursor: pointer;
+    padding: 15px;
+    background: -webkit-linear-gradient(120deg, #eb94d0, #2079b0);
+    background: -moz-linear-gradient(120deg, #eb94d0, #2079b0);
+    background: -ms-linear-gradient(120deg, #eb94d0, #2079b0);
+    background: -o-linear-gradient(120deg, #5BC8AC, #2079b0);
+    background: linear-gradient(120deg, #363237, #c40079);
+}
+
+.columbutton:hover {
+    border: 1px solid #c40079;
+    box-shadow: 0px 1px 10px 2px rgba(196, 0, 121, 1);
+}
+
+.section4 {
+    height: auto;
+    background-color: #F1F1F2;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.servicestocenter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* testi */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    background: -webkit-linear-gradient(45deg, #c40079 0%, #363237 100%);
+    background: linear-gradient(45deg, #c40079 0%, #363237 100%);
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 3em;
+    text-align: left;
+}
+
+
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: calc(100% + 60px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+    transition: opacity 0.35s, transform 0.45s;
+    -webkit-transform: translate3d(-40px, 0, 0);
+    transform: translate3d(-40px, 0, 0);
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    font-size: 17px;
+    background-color: transparent;
+    padding: 15% 0 10px 0;
+    text-align: left;
+}
+
+.hovereffect .overlay:before {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid #fff;
+    content: '';
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+    transition: opacity 0.35s, transform 0.45s;
+    -webkit-transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px, 0, 0);
+}
+
+.hovereffect a,
+.hovereffect p {
+    color: #FFF;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+    transition: opacity 0.35s, transform 0.45s;
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+}
+
+.hovereffect:hover img {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.hovereffect:hover .overlay:before,
+.hovereffect:hover a,
+.hovereffect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.card {
+    width: 24rem;
+}
+
+/* testi loppuu */
+
+.section5 {
+    height: auto;
+    background-color: #F1F1F2;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 .thin {
+    font-weight: 100;
+}
+
+.section6 {
+    height: auto;
+    background-color: #4c4e50;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* CONTACT-FORM ALKAA*/
+
+form {
+    max-width: 420px;
+    margin: 50px auto;
+}
+
+.feedback-input {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #363237;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid #c40079;
+
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+.buttoni {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: -webkit-linear-gradient(120deg, #363237, #c40079);
+    background: -moz-linear-gradient(120deg, #363237, #c40079);
+    background: -ms-linear-gradient(120deg, #363237, #c40079);
+    background: -o-linear-gradient(120deg, #363237, #c40079);
+    background: linear-gradient(120deg, #363237, #c40079);
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+.buttoni:hover {
+    border: 1px solid #c40079;
+    box-shadow: 0px 1px 10px 2px rgba(196, 0, 121, 1);
+}
+
+/* CONTACT-FORM LOPPUU*/
+
+/* VIESTI-ILMOITUS ALKAA*/
+
+.buttoni2 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: -webkit-linear-gradient(120deg, #363237, #c40079);
+    background: -moz-linear-gradient(120deg, #363237, #c40079);
+    background: -ms-linear-gradient(120deg, #363237, #c40079);
+    background: -o-linear-gradient(120deg, #363237, #c40079);
+    background: linear-gradient(120deg, #363237, #c40079);
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 500;
+}
+
+.buttoni2:hover {
+    border: 1px solid #c40079;
+    box-shadow: 0px 1px 10px 2px rgba(196, 0, 121, 1);
+}
+
+.ilmoitusviesti {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toimii {
+    color: aliceblue;
+}
+
+.toimii2 {
+    color: cadetblue;
+    font-weight: 500;
+}
+
+.persons {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.valkonen {
+    color: white;
+    font-size: 24px;
+}
+
+/* VIESTI-ILMOITUS LOPPUU*/
+
+@media only screen and (max-width: 992px) {
+
+    .dropdown-menu {
+        background-color: rgba(0, 0, 0, 0.1) !important;
+        text-align: center !important;
+    }
+
+    .dropdown-item:hover {
+        color: #c40079 !important;
+        background-color: inherit;
+    }
+
+    .logopicture {
+        max-width: 140px;
+
+    }
+
+    .section3image-mobile {
+        display: none;
+    }
+
+    .landingarticle {
+        font-weight: 100 !important;
+        font-size: 65px !important;
+    }
+
+    .landingarticle2 {
+        font-weight: 900 !important;
+        font-size: 65px !important;
+    }
+
+    .titlearticle {
+        font-weight: 100 !important;
+        font-size: 55px !important;
+    }
+
+    .titlearticle2 {
+        font-weight: 900 !important;
+        font-size: 55px !important;
+    }
+
+
+    .section2 {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .logopicture {
+        max-width: 120px;
+
+    }
+
+    .section3image {
+        display: none;
+    }
+
+    .section3image-mobile {
+        display: block;
+    }
+
+    .landingarticle {
+        font-weight: 100 !important;
+        font-size: 30px !important;
+    }
+
+    .landingarticle2 {
+        font-weight: 900 !important;
+        font-size: 25px !important;
+    }
+    .section2 {
+        padding-right: 50px;
+        padding-left: 50px;
+
+    }
+
+    .clolummtext2 {
+        padding-bottom: 90px;
+        padding-top: 90px;
+    }
+
+    .card {
+        width: 20rem;
+    }
+}
